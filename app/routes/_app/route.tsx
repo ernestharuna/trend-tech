@@ -29,15 +29,14 @@ export default function DefaultLayout() {
             <div className="-translate-x-1/2 fixed left-1/2 transform z-50 w-full">
                 {/* Navbar */}
                 <nav
-                    className={`py-4 transition-all duration-300 ease-in-out ${scrolled ? "bg-white/80 backdrop-blur shadow-[0_5px_20px_rgba(0,0,0,0.1)] py-3 px-3" : "bg-transparent py-0"
+                    className={`py-4 transition-all duration-300 ease-in-out ${scrolled ? "bg-white shadow-[0_5px_20px_rgba(0,0,0,0.1)] py-3 px-3" : "bg-transparent py-0"
                         } border-gray-200 `}
                 >
                     <div className="container flex justify-between items-center gap-2">
                         <section className="flex items-center gap-4">
                             <div className="flex gap-2 items-center">
-                                {/* <img src="/images/logos/logo.png" alt="logo" width={38} /> */}
                                 <Link to="/" className="text-primary font-bold md:text-lg">
-                                    <span className="bg-primary-theme text-white p-1 rounded-md">Trend</span> <span className="text-primary-theme">Tech</span>
+                                    <img src="/images/trendtech-logo.png" alt="logo" width={80} />
                                 </Link>
                             </div>
 
@@ -89,7 +88,7 @@ export default function DefaultLayout() {
                 <div className="bg-white py-10">
                     <div className="container">
                         <div className="mb-20">
-                            <div className="flex items-center justify-between">
+                            <div className="flex flex-col md:flex-row gap-10 items-center justify-between">
                                 <div className="max-w-2xl">
                                     <h6 className="text-xl font-medium pb-4">
                                         <Link to="/" className="text-primary font-bold md:text-lg">
@@ -100,8 +99,15 @@ export default function DefaultLayout() {
                                         Trendtech Limited has and continues to provide successful Information Technology (IT) solutions to government and private sector clients across Africa.
                                     </p>
                                 </div>
-                                <div className="max-w-lg">
-                                    <img src="/images/trendtech-logo.png" alt="Trendtech Logo" className="w-full inline-block" />
+                                <div className="max-w-lg text-center">
+                                    <img
+                                        src="/images/trendtech-logo.png"
+                                        alt="Trendtech Logo"
+                                        className="w-40 inline-block mb-2"
+                                    />
+                                    <p className="px-2 py-1 bg-primary-theme text-white rounded-md">
+                                        Inovating for development impact
+                                    </p>
                                 </div>
                             </div>
                         </div>
