@@ -62,23 +62,23 @@ export default function DefaultLayout() {
                         <div>
                             <div className="mb-3">
                                 <div className="border-b py-4">
-                                    <Link to={"#about-us"} className="text-primary font-medium">
+                                    <Link onClick={() => setMenu(false)} to={"#about-us"} className="text-primary font-medium">
                                         About us
                                     </Link>
                                 </div>
                                 <div className="border-b py-4">
-                                    <Link to={"#services"} className="text-primary font-medium">
+                                    <Link onClick={() => setMenu(false)} to={"#services"} className="text-primary font-medium">
                                         Services
                                     </Link>
                                 </div>
                                 <div className="border-b py-4">
-                                    <Link to={"#clients"} className="text-primary font-medium">
+                                    <Link onClick={() => setMenu(false)} to={"#clients"} className="text-primary font-medium">
                                         Clients
                                     </Link>
                                 </div>
                                 <div className="py-4">
-                                    <a href="tel:+2348026658956" className="flex text-foreground text-sm font-light gap-2 items-center">
-                                        <span>Contact support</span> <ChevronRight size={12} />
+                                    <a href="tel:+2348036343778" className="flex text-foreground text-sm font-light gap-2 items-center">
+                                        <span>Contact us </span> <ChevronRight size={12} />
                                     </a>
                                 </div>
                             </div>
