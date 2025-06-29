@@ -29,8 +29,8 @@ export default function DefaultLayout() {
             <div className="-translate-x-1/2 fixed left-1/2 transform z-50 w-full">
                 {/* Navbar */}
                 <nav
-                    className={`py-1.5 transition-all duration-300 ease-in-out bg-white ${scrolled ? "shadow-xl" : ""
-                        } border-gray-200 `}
+                    className={`py-1.5 transition-all duration-300 ease-in-out 
+                        ${scrolled ? "shadow-xl bg-white/70 backdrop-blur-xl" : "bg-white"} border-gray-200 `}
                 >
                     <div className="container flex justify-between items-center gap-2">
                         <section className="flex items-center gap-4">

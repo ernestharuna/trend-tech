@@ -77,11 +77,10 @@ export default function Home() {
           </div>
 
           <div id="services" className="bg-muted mb-20 py-14">
-            <div className="container text-center mb-10">
+            <div className="container text-center mb-18">
               <h2 className="text-4xl text-center font-semibold pb-5 text-gray-800">
                 Our Services
               </h2>
-
               <p className="text-lg text-gray-700">
                 Our core services: provided by emerging technologies
               </p>
@@ -141,7 +140,7 @@ export default function Home() {
 
           <div className="pb-20 pt-10 container">
             <div>
-              <h2 className="font-bold pb-7 text-5xl md:text-center text-gray-800">
+              <h2 className="font-bold pb-7 text-3xl md:text-5xl  md:text-center text-gray-800">
                 We create products that <BrMd />
                 <span className="text-primary-theme">shape our future</span>.
               </h2>
@@ -209,9 +208,9 @@ export default function Home() {
 
           <div id="clients" className="container">
             <div>
-              <h2 className="font-bold pb-18 text-5xl md:text-center">
-                Trusted by Global
-                <BrMd />
+              <h2 className="font-bold pb-18 text-3xl md:text-5xl md:text-center">
+                Trusted by Global{" "}
+                <br />
                 <span className="text-primary-theme">Partners in Development</span>.
               </h2>
             </div>
