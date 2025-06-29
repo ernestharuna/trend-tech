@@ -1,4 +1,4 @@
-import { Blocks, Brain, ClockArrowUp, Earth, Handshake, Users } from "lucide-react";
+import { Blocks, Brain, Check, ClockArrowUp, Earth, Handshake, Users } from "lucide-react";
 import { Link } from "react-router";
 import { BrMd } from "~/components/utility/line-break";
 import { PROJECTS } from "./projects";
@@ -7,52 +7,44 @@ import ProjectCard from "./project-card";
 export default function Home() {
   return (
     <div className="animated fadeIn">
-      <header className="lg:pt-16 pb-10 pt-[4rem] h-[70vh] bg-slate-100 flex justify-center flex-col">
+      <header className="lg:pt-16 pb-10 pt-[4rem] h-[70vh] bg-primary-theme flex justify-center flex-col">
         <section className="container justify-between gap-20 items-center md:flex">
-          <div className="text-start flex-1 md:text-start">
-            <h1 className="text-4xl text-primary-theme capitalize text-start font-bold lg:text-6xl md:text-start mt-3 tracking-tight z-10">
-              We empower businesses and development programs {" "}
-              <span className="text-3xl  rounded md:text-5xl text-gray-500 animate-caret-blink">|</span>
+          <div className="text-start flex-1 md:text-center">
+            <h1 className="text-3xl text-white capitalize font-bold lg:text-6xl mt-3 tracking-tight z-10">
+              We empower businesses and<BrMd /> development programs {" "}
+              <span className="text-4xl hidden md:inline-block rounded md:text-5xl text-secondary-theme animate-caret-blink">|</span>
             </h1>
 
-            <section className="flex flex-col text-gray-700 gap-5 mb-10 mt-5">
-              <span className="text-sm md:text-lg">
-                We are a purpose-driven technology company focused on solving real-world problems
+            <section className="flex flex-col text-gray-2 00 gap-5 mb-10 mt-5">
+              <span className="text-base md:text-lg">
+                We are a purpose-driven technology company focused on solving real-world <BrMd /> problems
                 using innovation and emerging tech tools.
               </span>
             </section>
 
-            <div className="flex flex-col gap-5 items-center md:flex-row z-10">
-              <Link to="/register" className="bg-primary-theme text-white rounded-md text-center text-sm w-full block font-medium uppercase hover:bg-gray-800 md:inline-block md:w-max px-10 py-3 transition">
+            <div className="flex flex-col gap-5 items-center justify-center md:flex-row z-10">
+              <Link to="/register" className="bg-white text-primary-theme rounded-md text-center text-sm w-full block font-medium capitalize hover:bg-gray-800 md:inline-block md:w-max px-10 py-3 transition">
                 Book a meeting
               </Link>
               <a
                 rel="noopener"
                 href="https://youtu.be/hBDECFvIk8w?si=G_1qfFhyCYJWwVv8"
                 target="_blank"
-                className="text-primary-theme border border-primary-theme rounded-md text-center text-sm w-full block font-bold hover:shadow-lg md:inline-block md:w-max px-10 py-3 transition"
+                className="text-white border border-white rounded-md text-center text-sm w-full block font-bold hover:shadow-lg md:inline-block md:w-max px-10 py-3 transition"
               >
                 See portfolio
               </a>
             </div>
-
-          </div>
-          <div className="flex-1 hidden md:block me-14">
-            <img
-              src="/images/atf-banner.svg"
-              alt="..."
-              className="h-[440px] pointer-events-none w-auto mx-auto"
-            />
           </div>
         </section>
       </header>
 
       <main>
-        <section className="my-20 container">
-          <div className="flex md:flex-row flex-col items-center justify-between gap-10 mb-20">
+        <section className="my-20">
+          <div id="about-us" className="container flex md:flex-row flex-col items-center justify-between gap-10 mb-20">
             <div>
               <h2 className="text-4xl font-semibold pb-5 text-gray-800">
-                Our Mission<span className="text-primary-theme font-black text-5xl animate-bounce inline-block">.</span>
+                About Us<span className="text-primary-theme font-black text-5xl animate-bounce inline-block">.</span>
               </h2>
               <p className="text-lg text-gray-700">
                 TrendTech Limited is a purpose-driven technology company focused on solving real-world problems.
@@ -78,13 +70,76 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold pb-3 relative z-10 text-3xl text-gray-800">What we do</h3>
                 <p className="text-gray-700 text-lg">
-                  Our service offerings range from consultancy to software development / customization and biometric verification.
+                  Our service offerings range from consultancy to bespoke software development
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="pb-20 pt-10">
+          <div id="services" className="bg-muted mb-20 py-14">
+            <div className="container text-center mb-10">
+              <h2 className="text-4xl text-center font-semibold pb-5 text-gray-800">
+                Our Services
+              </h2>
+
+              <p className="text-lg text-gray-700">
+                Our core services: provided by emerging technologies
+              </p>
+            </div>
+
+            <div className="container flex md:flex-row flex-col items-stretch gap-10 mb-10">
+              <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
+                <div className="absolute -top-16 right-10 text-gray-300">
+                  <span className="font-extrabold text-[6rem]">1</span>
+                </div>
+                <p className="text-gray-700 text-3xl">
+                  Tech Innovation for Development
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Making the best innovations for tech companies
+                </p>
+              </div>
+
+              <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
+                <div className="absolute -top-16 right-10 text-gray-300">
+                  <span className="font-extrabold text-[6rem]">2</span>
+                </div>
+                <p className="text-gray-700 text-3xl">
+                  Emerging Technologies Integration
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Making the best innovations for tech companies
+                </p>
+              </div>
+            </div>
+
+            <div className="container flex md:flex-row flex-col items-stretch gap-6">
+              <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
+                <div className="absolute -top-16 right-10 text-gray-300">
+                  <span className="font-extrabold text-[6rem]">3</span>
+                </div>
+                <p className="text-gray-700 text-3xl">
+                  Business Process Automation
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Making the best innovations for tech companies
+                </p>
+              </div>
+              <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
+                <div className="absolute -top-16 right-10 text-gray-300">
+                  <span className="font-extrabold text-[6rem]">4</span>
+                </div>
+                <p className="text-gray-700 text-3xl">
+                  Development Tech Consulting
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Making the best innovations for tech companies
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="pb-20 pt-10 container">
             <div>
               <h2 className="font-bold pb-7 text-5xl md:text-center text-gray-800">
                 We create products that <BrMd />
@@ -152,7 +207,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div id="clients" className="container">
             <div>
               <h2 className="font-bold pb-18 text-5xl md:text-center">
                 Trusted by Global
@@ -185,7 +240,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
     </div>
   )
 }

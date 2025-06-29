@@ -29,7 +29,7 @@ export default function DefaultLayout() {
             <div className="-translate-x-1/2 fixed left-1/2 transform z-50 w-full">
                 {/* Navbar */}
                 <nav
-                    className={`py-4 transition-all duration-300 ease-in-out ${scrolled ? "bg-white shadow-[0_5px_20px_rgba(0,0,0,0.1)] py-3 px-3" : "bg-transparent py-0"
+                    className={`py-3 transition-all duration-300 ease-in-out bg-white ${scrolled ? "shadow-xl" : ""
                         } border-gray-200 `}
                 >
                     <div className="container flex justify-between items-center gap-2">
@@ -41,8 +41,16 @@ export default function DefaultLayout() {
                             </div>
 
                         </section>
-                        <div className="hidden md:block text-sm tracking-tight text-gray-500">
-                            {/* <Navigation /> */} Tech solutions for your business
+                        <div className="md:flex gap-8 hidden items-center text-sm tracking-tight text-gray-500">
+                            <Link to={"#about-us"} className="text-primary font-light">
+                                About us
+                            </Link>
+                            <Link to={"#services"} className="text-primary font-light">
+                                Services
+                            </Link>
+                            <Link to={"#clients"} className="text-primary font-light">
+                                Clients
+                            </Link>
                         </div>
                         <button aria-label="Menu" className="block md:hidden" type="button" onClick={() => setMenu(!menu)}>
                             <Menu />
@@ -50,19 +58,24 @@ export default function DefaultLayout() {
                     </div>
                 </nav>
                 {menu && (
-                    <div className="bg-white rounded-lg shadow-2xl block md:hidden mt-1 mx-auto px-4 py-4 z-50">
+                    <div className="bg-white shadow-2xl block md:hidden mt-1 mx-auto px-4 py-4 z-50">
                         <div>
                             <div className="mb-3">
-                                {/* <div className="border-b py-4">
-                                    <Link to={"/courses"} className="text-primary-foreground font-bold">
-                                        Courses
+                                <div className="border-b py-4">
+                                    <Link to={"#about-us"} className="text-primary font-medium">
+                                        About us
                                     </Link>
                                 </div>
                                 <div className="border-b py-4">
-                                    <Link to={"/classes"} className="text-primary-foreground font-bold">
-                                        Classes
+                                    <Link to={"#services"} className="text-primary font-medium">
+                                        Services
                                     </Link>
-                                </div> */}
+                                </div>
+                                <div className="border-b py-4">
+                                    <Link to={"#clients"} className="text-primary font-medium">
+                                        Clients
+                                    </Link>
+                                </div>
                                 <div className="py-4">
                                     <a href="tel:+2348026658956" className="flex text-foreground text-sm font-light gap-2 items-center">
                                         <span>Contact support</span> <ChevronRight size={12} />
