@@ -98,17 +98,12 @@ export default function DefaultLayout() {
                 <Outlet />
             </div>
             <footer>
-                <div className="bg-white py-10">
+                <div className="bg-muted py-10 border-t">
                     <div className="container">
                         <div className="mb-20">
                             <div className="flex flex-col md:flex-row gap-10 items-center justify-between">
-                                <div className="max-w-2xl">
-                                    <h6 className="text-xl font-medium pb-4">
-                                        <Link to="/" className="text-primary font-bold md:text-lg">
-                                            <span className="bg-primary-theme text-white p-1 rounded-md">Trend</span> <span className="text-primary-theme">Tech</span>
-                                        </Link>
-                                    </h6>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="max-w-xl">
+                                    <p className="text-gray-600 text-center  md:text-start  text-sm">
                                         Trendtech Limited has and continues to provide successful Information Technology (IT) solutions to government and private sector clients across Africa.
                                     </p>
                                 </div>
@@ -118,9 +113,6 @@ export default function DefaultLayout() {
                                         alt="Trendtech Logo"
                                         className="w-40 inline-block mb-2"
                                     />
-                                    <p className="px-2 py-1 bg-primary-theme text-white rounded-md">
-                                        Inovating for development impact
-                                    </p>
                                 </div>
                             </div>
                         </div>
