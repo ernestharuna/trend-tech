@@ -26,14 +26,6 @@ export default function Home() {
               <Link to="/register" className="bg-white text-primary-theme text-center text-sm w-full block font-bold border border-white capitalize hover:bg-gray-800 md:inline-block md:w-max px-18 py-3 transition">
                 Contact Us
               </Link>
-              {/* <a
-                rel="noopener"
-                href="https://youtu.be/hBDECFvIk8w?si=G_1qfFhyCYJWwVv8"
-                target="_blank"
-                className="text-white border border-white text-center text-sm w-full block font-bold hover:shadow-lg md:inline-block md:w-max px-10 py-3 transition"
-              >
-                See portfolio
-              </a> */}
             </div>
           </div>
         </section>
@@ -68,7 +60,7 @@ export default function Home() {
             <div className="container flex md:flex-row flex-col items-stretch gap-10 mb-10">
               <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
                 <div className="absolute -top-16 right-10 text-gray-300">
-                  <span className="font-extrabold text-[6rem]">1</span>
+                  <span className="font-extrabold text-tertiary-theme text-[6rem]">1</span>
                 </div>
                 <p className="text-gray-700 text-3xl">
                   Tech Innovation for Development
@@ -80,7 +72,7 @@ export default function Home() {
 
               <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
                 <div className="absolute -top-16 right-10 text-gray-300">
-                  <span className="font-extrabold text-[6rem]">2</span>
+                  <span className="font-extrabold text-tertiary-theme text-[6rem]">2</span>
                 </div>
                 <p className="text-gray-700 text-3xl">
                   Emerging Technologies Integration
@@ -94,7 +86,7 @@ export default function Home() {
             <div className="container flex md:flex-row flex-col items-stretch gap-6">
               <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
                 <div className="absolute -top-16 right-10 text-gray-300">
-                  <span className="font-extrabold text-[6rem]">3</span>
+                  <span className="font-extrabold text-tertiary-theme text-[6rem]">3</span>
                 </div>
                 <p className="text-gray-700 text-3xl">
                   Business Process Automation
@@ -105,7 +97,7 @@ export default function Home() {
               </div>
               <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
                 <div className="absolute -top-16 right-10 text-gray-300">
-                  <span className="font-extrabold text-[6rem]">4</span>
+                  <span className="font-extrabold text-tertiary-theme text-[6rem]">4</span>
                 </div>
                 <p className="text-gray-700 text-3xl">
                   Development Tech Consulting
@@ -183,7 +175,7 @@ export default function Home() {
               <h2 className="font-bold pb-18 text-3xl md:text-5xl md:text-center">
                 Trusted by Global{" "}
                 <br />
-                <span className="text-secondary-theme">Partners in Development</span>.
+                <span className="text-tertiary-theme">Partners in Development</span>.
               </h2>
             </div>
 
