@@ -117,7 +117,7 @@ export default function DefaultLayout() {
                             </div>
                         </div>
                         <div className="text-muted-foreground text-sm">
-                            <span>&copy; 2000 - {new Date().getFullYear()} Trendtech limited</span>
+                            <span>&copy; 2015 - {new Date().getFullYear()} Trendtech limited</span>
                         </div>
                     </div>
                 </div>

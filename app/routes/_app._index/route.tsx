@@ -1,4 +1,4 @@
-import {Brain, ClockArrowUp, Earth, Users } from "lucide-react";
+import { Brain, ClockArrowUp, Earth, Users } from "lucide-react";
 import { Link } from "react-router";
 import { BrMd } from "~/components/utility/line-break";
 import { PROJECTS } from "./projects";
@@ -23,9 +23,9 @@ export default function Home() {
             </section>
 
             <div className="flex flex-col gap-5 items-center justify-center md:flex-row z-10">
-              <Link to="/register" className="bg-white text-primary-theme text-center text-sm w-full block font-bold border border-white capitalize hover:bg-gray-800 md:inline-block md:w-max px-18 py-3 transition">
+              <a href="mailto:info@trendtechltd.com" className="bg-white text-primary-theme text-center text-sm w-full block font-bold border border-white capitalize hover:bg-gray-800 md:inline-block md:w-max px-18 py-3 transition">
                 Contact Us
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -36,7 +36,7 @@ export default function Home() {
           <div id="about-us" className="mb-20">
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-4xl font-semibold pb-5 text-gray-800">
-                About Us<span className="text-primary-theme font-black text-5xl animate-bounce inline-block">.</span>
+                About Us <span className="text-tertiary-theme font-black text-6xl animate-bounce inline-block">.</span>
               </h2>
               <p className="text-lg text-gray-700">
                 TrendTech Limited is a purpose-driven technology company focused on solving real-world problems.
@@ -62,11 +62,11 @@ export default function Home() {
                 <div className="absolute -top-16 right-10 text-gray-300">
                   <span className="font-extrabold text-tertiary-theme text-[6rem]">1</span>
                 </div>
-                <p className="text-gray-700 text-3xl">
+                <p className="text-gray-700 text-3xl mb-2">
                   Tech Innovation for Development
                 </p>
                 <p className="text-gray-700 text-sm">
-                  Making the best innovations for tech companies
+                  Driving social impact through tailored technology solutions that support sustainable development goals.
                 </p>
               </div>
 
@@ -74,11 +74,11 @@ export default function Home() {
                 <div className="absolute -top-16 right-10 text-gray-300">
                   <span className="font-extrabold text-tertiary-theme text-[6rem]">2</span>
                 </div>
-                <p className="text-gray-700 text-3xl">
+                <p className="text-gray-700 text-3xl mb-2">
                   Emerging Technologies Integration
                 </p>
                 <p className="text-gray-700 text-sm">
-                  Making the best innovations for tech companies
+                  Empowering organizations to embrace AI, IoT, and other emerging technologies for future-ready operations.
                 </p>
               </div>
             </div>
@@ -88,22 +88,22 @@ export default function Home() {
                 <div className="absolute -top-16 right-10 text-gray-300">
                   <span className="font-extrabold text-tertiary-theme text-[6rem]">3</span>
                 </div>
-                <p className="text-gray-700 text-3xl">
+                <p className="text-gray-700 text-3xl mb-2">
                   Business Process Automation
                 </p>
                 <p className="text-gray-700 text-sm">
-                  Making the best innovations for tech companies
+                  Streamlining operations by automating routine tasks to enhance productivity and reduce costs.
                 </p>
               </div>
               <div className="rounded-lg basis-1/2 py-12 px-5 bg-white border shadow-md hover:shadow-lg transition flex-1 relative">
                 <div className="absolute -top-16 right-10 text-gray-300">
                   <span className="font-extrabold text-tertiary-theme text-[6rem]">4</span>
                 </div>
-                <p className="text-gray-700 text-3xl">
+                <p className="text-gray-700 text-3xl mb-2">
                   Development Tech Consulting
                 </p>
                 <p className="text-gray-700 text-sm">
-                  Making the best innovations for tech companies
+                  Offering strategic guidance to design, implement, and scale tech solutions for development-focused programs.
                 </p>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function Home() {
                   <Users className="w-8 h-8 fill-white" />
                 </div>
                 <h4 className="text-2xl font-medium">
-                  200k+ users enjoy and use our <BrMd /> top products
+                  Our users enjoy and use our <BrMd /> top products
                 </h4>
                 <div className="flex-grow-1"></div>
                 <Link to={"/"} className="underline underline-offset-2">
