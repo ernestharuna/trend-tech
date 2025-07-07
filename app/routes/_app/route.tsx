@@ -5,8 +5,8 @@ import { ChevronRight, Menu } from "lucide-react";
 
 export function meta({ }: Route.MetaArgs) {
     return [
-        { title: "Comsoft Limited" },
-        { name: "description", content: "Leveraging technology to empower your business." },
+        { title: "Trend Tech" },
+        { name: "description", content: "Innovating for development impact." },
     ];
 }
 
